@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+       :root{--bg:#0a0a0f;--sur:#111118;--card:#16161f;--ac:#00e5a0;--ac2:#6c63ff;--txt:#e8e8f0;--mu:#7a7a9a;--br:rgba(255,255,255,0.07)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+     section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-family: 'Syne', sans-serif; font-weight: 800;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      color: var(--heading); line-height: 1.15;
+      margin-bottom: 1.5rem;
+    }
+    p { color: var(--muted); margin-bottom: 1rem; }
+
+    /* DIVIDER */
+    .divider { border: none; border-top: 1px solid var(--border); margin: 0 2rem; }
+
+
+
+    .flow-step {
+  background: #0a1427; /* Standard dark grey */
+  border: 1px solid #444; /* Visible border */
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  text-align: center;
+  min-width: 130px;
+  color: white; /* Make text visible */
+  margin-bottom: 3rem;
+}
+
+        .flow {
+      display: flex; align-items: center; gap: 20; flex-wrap: wrap;
+      margin: 2.5rem 0; justify-content: center;
+      
+    }
+    /* .flow-step {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 1rem 1.25rem;
+      text-align: center; min-width: 130px;
+    } */
+    .flow-step .step-icon { font-size: 1.6rem; display: block; margin-bottom: 0.4rem; }
+    .flow-step .step-label { font-size: 0.8rem; color: var(--muted); }
+    .flow-step .step-name { font-weight: 600; font-size: 0.95rem; color: var(--text); }
+    .flow-arrow { color: var(--accent); font-size: 1.4rem; padding: 0 0.5rem; }
+    .components-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
+    .comp-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 1.5rem;
+    }
+    /* Container for the boxes */
+.components-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 1.5rem; 
+  margin-top: 2rem; 
+}
+
+/* The Individual Boxes */
+.comp-card {
+  
+  background: #0a1427; /* Standard dark grey */
+  border: 1px solid #444; /* Visible border */
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  text-align: center;
+  min-width: 130px;
+  color: white; /* Make text visible */
+  margin-bottom: 3rem;
+
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+/* Hover effect to make it interactive */
+.comp-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-5px);
+}
+
+/* The Title inside the box */
+.comp-card h4 { 
+  font-family: 'Syne', sans-serif; 
+  color: var(--heading); 
+  font-size: 1.1rem; 
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* The Paragraph inside the box */
+.comp-card p { 
+  font-size: 0.85rem; 
+  color: var(--muted); 
+  margin: 0; 
+  line-height: 1.6;
+}
+    .comp-card p { font-size: 0.85rem; color: var(--muted); margin: 0; }
+
+  </style>
+</head>
+<body>
+  <nav>
+  <a href="index.html">Home</a>
+  <a href="problem.html">Problem</a>
+  <a href="objectives.html">Objectives</a>
+  <a href="solution.html">Solution</a>
+  <a href="methodology.html">Methodology</a>
+  <a href="results.html">Results</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="future.html">Future Scope</a>
+  <a href="team.html">Team</a>
+  <a href="references.html">References</a>
+</nav>
+
+  <div class="container">
+    <h1>Methodology</h1>
+  
+    <div class="card">
+
+
+      <section id="methodology">
+  <p class="section-label">How It Works</p>
+  <h2>Methodology</h2>
+  <p>The system follows a simple, reliable pipeline from gesture to voice output.</p>
+
+  <div class="flow">
+    <div class="flow-step">
+      <span class="step-icon">🤚</span>
+      <div class="step-name">Gesture</div>
+      <div class="step-label">User makes sign</div>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">
+      <span class="step-icon">📏</span>
+      <div class="step-name">Sensors</div>
+      <div class="step-label">Flex + MPU6050</div>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">
+      <span class="step-icon">🔢</span>
+      <div class="step-name">ADC</div>
+      <div class="step-label">Analog → Digital</div>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">
+      <span class="step-icon">⚙️</span>
+      <div class="step-name">Arduino</div>
+      <div class="step-label">Pattern match</div>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div  class="flow-step">
+      <span class="step-icon">🔊</span>
+      <div class="step-name">Output</div>
+      <div class="step-label">LCD + Speaker</div>
+    </div>
+  </div>
+
+  <div class="components-grid">
+    <div class="comp-card">
+      <h4>Arduino Nano / UNO R3</h4>
+      <p>ATmega328P microcontroller with built-in ADC. Processes sensor data and triggers the output.</p>
+    </div>
+    <div class="comp-card">
+      <h4>Flex Sensors (×4)</h4>
+      <p>Conductive ink strips whose resistance increases with bending. Mounted on each finger to capture bend angle (0–1023 range).</p>
+    </div>
+    <div class="comp-card">
+      <h4>MPU-6050 Accelerometer</h4>
+      <p>MEMS 3-axis gyroscope + accelerometer. Captures hand position in X, Y, Z axes via I2C communication.</p>
+    </div>
+    <div class="comp-card">
+      <h4>HC-05 Bluetooth Module</h4>
+      <p>Enables wireless transmission to a smartphone. The paired app converts text to speech with adjustable pitch and volume.</p>
+    </div>
+    <div class="comp-card">
+      <h4>LCD Display</h4>
+      <p>Shows the identified gesture as text for visual confirmation and additional accessibility.</p>
+    </div>
+    <div class="comp-card">
+      <h4>Speaker / Speech IC</h4>
+      <p>Outputs the audio equivalent of the recognized gesture — audible to anyone nearby without requiring any app.</p>
+    </div>
+  </div>
+</section>
+    </div>
+
+     <div class="card">
+<!-- METHODOLOGY -->
+<section class="sur" id="methodology">
+  <div class="mw">
+    
+    <h2 class="fu">How It Works</h2>
+    <div class="div fu"></div>
+    <div class="fc">
+      <div class="fs fu"><div class="fn">01</div><div><h3>Wear &amp; Power On</h3><p>Glove with sensors, Arduino, and Bluetooth module is worn and switched on.</p></div></div>
+      <div class="fs fu"><div class="fn">02</div><div><h3>Perform Gesture</h3><p>User makes a hand gesture — letter, number, or custom phrase from ISL / ASL.</p></div></div>
+      <div class="fs fu"><div class="fn">03</div><div><h3>Sensors Capture Values</h3><p>4 flex sensors measure finger bending; MPU-6050 captures x, y, z orientation — all fed as analog signals to Arduino's ADC pins.</p></div></div>
+      <div class="fs fu"><div class="fn">04</div><div><h3>Arduino Pattern Matches</h3><p>Digital values compared against predefined gesture database (C/C++ in Arduino IDE). On match, corresponding text is queued.</p></div></div>
+      <div class="fs fu"><div class="fn">05</div><div><h3>Bluetooth Transmission</h3><p>Matched text sent via HC-05 to paired Android phone in real time.</p></div></div>
+      <div class="fs fu"><div class="fn">06</div><div><h3>Speech &amp; Text Output</h3><p>Android app displays text and speaks it aloud. Pitch, speed, and volume are customizable.</p></div></div>
+    </div>
+  </div>
+</section>
+  </div>
+  </div>
+  </div>
+
+
+  
+</body>
+</html>

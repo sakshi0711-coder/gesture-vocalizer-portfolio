@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    :root {
+      --bg: #0a0f1e;
+      --surface: #111827;
+      --card: #161f30;
+      --border: rgba(99,179,237,0.15);
+      --accent: #38bdf8;
+      --accent2: #6ee7b7;
+      --accent3: #f472b6;
+      --text: #e2e8f0;
+      --muted: #8899aa;
+      --heading: #ffffff;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    
+     /* .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+    .team-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 16px; padding: 2rem 1.25rem; text-align: center;
+    }
+    .avatar {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.3rem;
+      color: #0a0f1e; margin: 0 auto 1rem;
+    }
+    .team-card h4 { font-family: 'Syne', sans-serif; color: var(--heading); font-size: 1rem; margin-bottom: 0.3rem; }
+    .team-card p { font-size: 0.8rem; color: var(--muted); margin: 0; } */
+
+       .team-bg { background: var(--surface); }
+    .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 1050px; margin: 0 auto; }
+    .team-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 2rem 1.5rem; text-align: center; transition: transform 0.3s, border-color 0.3s; }
+    .team-card:hover { transform: translateY(-4px); border-color: var(--accent); }
+    .avatar { width: 5rem; height: 5rem; border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-weight: 800; background: linear-gradient(135deg, var(--accent2), var(--accent)); color: #000; }
+    .team-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.25rem; }
+    .team-role { font-family: 'Space Mono', monospace; font-size: 0.7rem; color: var(--accent); letter-spacing: 0.1em; }
+
+  </style>
+</head>
+<body>
+  <nav>
+  <a href="index.html">Home</a>
+  <a href="problem.html">Problem</a>
+  <a href="objectives.html">Objectives</a>
+  <a href="solution.html">Solution</a>
+  <a href="methodology.html">Methodology</a>
+  <a href="results.html">Results</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="future.html">Future Scope</a>
+  <a href="team.html">Team</a>
+  <a href="references.html">References</a>
+</nav>
+
+  <div class="container">
+    <h1>Team</h1>
+  
+    <div class="card">
+      <!-- TEAM -->
+
+ 
+<section class="team-bg" id="team">
+  <div style="max-width:1200px; margin:0 auto; text-align:center;">
+    <p class="section-tag fade-up"> Team Details</p>
+   
+    <div class="section-divider fade-up" style="margin:0 auto 2rem;"></div>
+    <div class="team-grid">
+      <div class="team-card fade-up">
+        <div class="avatar">SK</div>
+        <h3>Sakshi Kor</h3>
+        <p class="team-role">Hardware Engineer</p>
+        <ul style="text-align:left; margin-top:1rem; list-style:none; display:flex; flex-direction:column; gap:0.5rem;">
+          <li style="font-size:0.78rem; color:var(--muted); display:flex; gap:0.5rem; align-items:flex-start;"><span style="color:var(--accent); flex-shrink:0;">▸</span>Made all circuit connections</li>
+          <li style="font-size:0.78rem; color:var(--muted); display:flex; gap:0.5rem; align-items:flex-start;"><span style="color:var(--accent); flex-shrink:0;">▸</span>Worked with Arduino, sensors &amp; components</li>
+          <li style="font-size:0.78rem; color:var(--muted); display:flex; gap:0.5rem; align-items:flex-start;"><span style="color:var(--accent); flex-shrink:0;">▸</span>Verified hardware functionality</li>
+          <li style="font-size:0.78rem; color:var(--muted); display:flex; gap:0.5rem; align-items:flex-start;"><span style="color:var(--accent); flex-shrink:0;">▸</span>Created portfolio</li>
+        </ul>
+      </div>
+      <div class="team-card fade-up">
+        <div class="avatar">VG</div>
+        <h3>Vaishnavi Gurav</h3>
+        <p class="team-role">Programmer</p>
+        <ul style="text-align:left; margin-top:1rem; list-style:none; display:flex; flex-direction:column; gap:0.5rem;">
+          <li style="font-size:0.78rem; color:var(--muted); display:flex; gap:0.5rem; align-items:flex-start;"><span style="color:var(--accent2); flex-shrink:0;">▸</span>Wrote the Arduino code</li>
+          <li style="font-size:0.78rem; color:var(--muted); display:flex; gap:0.5rem; align-items:flex-start;"><span style="color:var(--accent2); flex-shrink:0;">▸</span>Connected gestures to voice &amp; text output</li>
+          <li style="font-size:0.78rem; color:var(--muted); display:flex; gap:0.5rem; align-items:flex-start;"><span style="color:var(--accent2); flex-shrink:0;">▸</span>Debugged &amp; fixed program errors</li>
+          <li style="font-size:0.78rem; color:var(--muted); display:flex; gap:0.5rem; align-items:flex-start;"><span style="color:var(--accent2); flex-shrink:0;">▸</span>Created report &amp; </li>
+        </ul>
+      </div>
+      <div class="team-card fade-up">
+        <div class="avatar">MD</div>
+        <h3>Madhuri Deore</h3>
+        <p class="team-role">Testing &amp; Documentation</p>
+        <ul style="text-align:left; margin-top:1rem; list-style:none; display:flex; flex-direction:column; gap:0.5rem;">
+          <li style="font-size:0.78rem; color:var(--muted); display:flex; gap:0.5rem; align-items:flex-start;"><span style="color:var(--accent); flex-shrink:0;">▸</span>Integrated hardware &amp; software</li>
+          <li style="font-size:0.78rem; color:var(--muted); display:flex; gap:0.5rem; align-items:flex-start;"><span style="color:var(--accent); flex-shrink:0;">▸</span>Tested the complete system end-to-end</li>
+          <li style="font-size:0.78rem; color:var(--muted); display:flex; gap:0.5rem; align-items:flex-start;"><span style="color:var(--accent); flex-shrink:0;">▸</span>Created PPT</li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<div class="contact-section fade-in ">
+
+  <h1>Contact Our Team</h1>
+  <p>Feel free to reach out to any of our team members 👇</p>
+
+  <!-- TEAM CONTACT CARDS -->
+  <div class="contact-cards">
+
+    <!-- MEMBER 1 -->
+    <div class="contact-card">
+      <h2>Sakshi Kor</h2>
+      <p>📞 +91 9876543210</p>
+      <p>📧 sakshi@email.com</p>
+    </div>
+
+    <!-- MEMBER 2 -->
+    <div class="contact-card">
+      <h2>Vaishnavi Gurav</h2>
+      <p>📞 +91 9123456780</p>
+      <p>📧 vaishnavi@email.com</p>
+    </div>
+
+    <!-- MEMBER 3 -->
+    <div class="contact-card">
+      <h2>Madhuri Deore</h2>
+      <p>📞 +91 9988776655</p>
+      <p>📧 madhuri@email.com</p>
+    </div>
+
+  </div>
+
+  <!-- FORM BELOW -->
+  <div class="contact-form-box">
+    <h2>Send Message</h2>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message 🚀</button>
+    </form>
+  </div>
+
+</div>
+
+
+    </div>
+  </div>
+</body>
+</html>

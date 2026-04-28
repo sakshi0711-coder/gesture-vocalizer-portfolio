@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+  --bg: #0a0f1e;
+  --card: #161f30;      /* The dark blue/grey color of the box */
+  --border: rgba(99,179,237,0.15); /* The subtle glowing border */
+  --accent: #38bdf8;    /* The bright blue for titles */
+  --heading: #ffffff;   /* Pure white for headings */
+  --muted: #8899aa;     /* Greyish blue for descriptions */
+  --text: #e2e8f0;      /* Off-white for general text */
+} 
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+}
+
+       .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; margin: 2.5rem 0; }
+    .stat {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 1.75rem 1.25rem; text-align: center;
+    }
+    .stat-val { font-family: 'Syne', sans-serif; font-size: 2.4rem; font-weight: 800; color: var(--accent); }
+    .stat-label { font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem; }
+
+    /* FUTURE SCOPE */
+    .future-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
+    .future-item {
+      background: var(--card); border: 1px solid var(--border);
+      border-left: 3px solid var(--accent2);
+      border-radius: 12px; padding: 1.25rem 1.5rem;
+    }
+    .future-item h4 { color: var(--accent2); font-size: 0.95rem; margin-bottom: 0.5rem; }
+    .future-item p { font-size: 0.875rem; color: var(--muted); margin: 0; }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2.5rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px; padding: 2rem;
+      transition: border-color 0.3s;
+    }
+    .card img{
+      width: 350px;
+      height: 250px;
+      margin-left: 20px;
+    }
+    .card video{
+      width: 850px;
+      height: 400px;
+    }
+    .card:hover { border-color: rgba(56,189,248,0.4); }
+    .card-icon { font-size: 2rem; margin-bottom: 1rem; }
+    .card h3 { font-family: 'Syne', sans-serif; font-size: 1.2rem; color: var(--heading); margin-bottom: 0.75rem; }
+    .card ul { list-style: none; padding: 0; }
+    .card ul li { color: var(--muted); font-size: 0.95rem; padding: 0.3rem 0; padding-left: 1.2rem; position: relative; }
+    .card ul li::before { content: '→'; position: absolute; left: 0; color: var(--accent); }
+
+
+  </style>
+</head>
+<body>
+  <nav>
+  <a href="index.html">Home</a>
+  <a href="problem.html">Problem</a>
+  <a href="objectives.html">Objectives</a>
+  <a href="solution.html">Solution</a>
+  <a href="methodology.html">Methodology</a>
+  <a href="results.html">Results</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="future.html">Future Scope</a>
+  <a href="team.html">Team</a>
+  <a href="references.html">References</a>
+</nav>
+
+  <div class="container">
+    <h1>Results</h1>
+  
+    <div class="card">
+      
+
+      <section id="outcomes">
+  
+  <h2>Achievements &amp; Outcomes</h2>
+  <p>The device was tested with ASL gestures and custom emergency phrases with strong recognition accuracy.</p>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-val">85%</div>
+      <div class="stat-label">Gesture recognition accuracy (Random Forest benchmark)</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">4+</div>
+      <div class="stat-label">Flex sensors capturing individual finger bends</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">3</div>
+      <div class="stat-label">Output modes: Text, Voice, Bluetooth</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">0</div>
+      <div class="stat-label">Internet or mobile dependency</div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="card">
+      <div class="card-icon">✅</div>
+      <h3>Gestures Recognized</h3>
+      <ul>
+        <li>ASL numerals (1–10)</li>
+        <li>ASL alphabet letters (A–Z)</li>
+        <li>Custom phrases: "I Need My Medicine"</li>
+        <li>Emergency phrases: "Call an Ambulance"</li>
+        <li>Common greetings and daily expressions</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-icon">💡</div>
+      <h3>Key Advantages Over Prior Work</h3>
+      <ul>
+        <li>No mobile/PC required — fully standalone</li>
+        <li>Dual output (LCD + voice) simultaneously</li>
+        <li>Customizable output phrases</li>
+        <li>Voice pitch, speed &amp; volume adjustable</li>
+        <li>Compact form factor suitable for daily wear</li>
+      </ul>
+    </div>
+  
+</section>
+    </div>
+
+    <div class="card">
+      
+
+      <section id="outcomes">
+  
+  <h2>Result Images</h2>
+  <div class="two-col">
+    <div class="card">
+     <img src="img\WhatsApp Image 2026-04-27 at 11.15.01 PM.jpeg" alt="Flex senser output">
+     
+    </div>
+    <div class="card">
+      <img src="img\WhatsApp Image 2026-04-27 at 11.15.03 PM.jpeg" alt="Flex senser output">
+    </div>
+
+     <div class="card">
+      <img src="img\WhatsApp Image 2026-04-27 at 11.15.17 PM.jpeg" alt="simulation output">
+    </div>
+     
+  </div>
+</section>
+</div>
+
+    <div class="card">
+
+   <section id="outcomes">
+  
+  <h2>Result Video</h2>
+  <div class="two-col">
+    <div class="card">
+     <video controls>
+    <source src="img\WhatsApp Video 2026-04-27 at 11.15.31 PM.mp4" type="video/mp4">
+  </video>
+     
+    </div>
+ 
+     
+  </div>
+</section>
+    </div>
+  </div>
+</body>
+</html>

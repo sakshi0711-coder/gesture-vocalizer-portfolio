@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+        .solution-highlight {
+      background: linear-gradient(135deg, rgba(56,189,248,0.08), rgba(110,231,183,0.06));
+      border: 1px solid rgba(56,189,248,0.2);
+      border-radius: 20px; padding: 3rem;
+      margin-top: 2rem;
+    }
+    .solution-highlight blockquote {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.2rem, 2.5vw, 1.65rem);
+      color: var(--heading); font-style: italic;
+      border-left: 3px solid var(--accent); padding-left: 1.5rem;
+      line-height: 1.4; margin-bottom: 2rem;
+    }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+    .feature-chip {
+      background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.2);
+      border-radius: 10px; padding: 0.8rem 1rem;
+      font-size: 0.9rem; color: var(--accent); font-weight: 500;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+  <a href="index.html">Home</a>
+  <a href="problem.html">Problem</a>
+  <a href="objectives.html">Objectives</a>
+  <a href="solution.html">Solution</a>
+  <a href="methodology.html">Methodology</a>
+  <a href="results.html">Results</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="future.html">Future Scope</a>
+  <a href="team.html">Team</a>
+  <a href="references.html">References</a>
+</nav>
+
+  <div class="container">
+    <h1>Solution</h1>
+  
+    <div class="card">
+      <p>
+        A smart glove equipped with sensors detects finger movements and hand position.
+        Arduino processes signals and converts them into text and voice output.
+        Sign language is a tool for communication between the mute community and normal people.
+        As it is difficult for the mute community to communicate with people who don't understand
+         the hand sign language. This system recognizes the hand gestures and these recognized hand
+          gestures are converted into speech so that normal people can easily understand. The project 
+          aims to low the communication gap between the world and the mute community. 
+      </p>
+      <section id="solution">
+  <h2>The Solution &amp; Concept</h2>
+
+  <div class="solution-highlight">
+    <blockquote>"A wearable glove that reads your hand — and speaks for you."</blockquote>
+    <p>The Gesture Vocalizer is a smart glove embedded with flex sensors and an accelerometer. When the user makes a hand gesture, the sensors capture finger bend angles and hand orientation. Arduino Nano processes these values and maps them to predefined gestures, instantly outputting the corresponding word or phrase via an LCD screen and a speaker — no phone, no internet, no middleman.</p>
+
+    <div class="features">
+      <div class="feature-chip">⚡ Real-time Output</div>
+      <div class="feature-chip">📺 LCD Text Display</div>
+      <div class="feature-chip">🔊 Voice Speaker</div>
+      <div class="feature-chip">📡 Bluetooth Option</div>
+      <div class="feature-chip">🔋 Standalone Device</div>
+      <div class="feature-chip">💰 Low-cost Build</div>
+    </div>
+  </div>
+</section>
+    </div>
+  </div>
+</body>
+</html>
